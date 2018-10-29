@@ -7,8 +7,8 @@ app = Flask(__name__)
 def main():
     return render_template('index.html')
 
-@app.route('/<query>')
-def tacos():
+@app.route('/pokemon/<query>')
+def pokemon(query):
     return '<h1>You are on the ' + query + ' page.</h1>'
 
 if __name__ == '__main__':
