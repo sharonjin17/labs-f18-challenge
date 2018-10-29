@@ -7,9 +7,9 @@ app = Flask(__name__)
 def main():
     return render_template('index.html')
 
-@app.route('https://tacos-ocecwkpxeq.now.sh/')
+@app.route('/<query>')
 def tacos():
-    return '<h1>You are on the tacos page.</h1>'
+    return '<h1>You are on the ' + query + ' page.</h1>'
 
 if __name__ == '__main__':
     app.run()
