@@ -3,10 +3,6 @@ import requests
 
 app = Flask(__name__)
 
-pokemon_data = {}
-name = ""
-number = 1
-
 def is_int(num):
     try:
         int(num)
